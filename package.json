@@ -4,7 +4,8 @@
   "description": "Tarantool driver for 1.7",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./lib ./test",
+    "eslint": "eslint ./",
+    "eslint:fix": "eslint ./ --fix",
     "test": "istanbul cover --report lcov _mocha",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "benchmark-read": "node benchmark/read",
